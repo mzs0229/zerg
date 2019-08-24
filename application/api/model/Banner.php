@@ -2,6 +2,7 @@
 
 namespace app\api\model;
 
+use think\Db;
 use think\Exception;
 
 
@@ -10,6 +11,7 @@ class Banner
 {
     public static function getBannerById($id)
     {
-        return 'mzs0229';
+        $result = Db::query('select * from banner_item where banner_id=?',[$id]);
+        return $result;
     }
 }

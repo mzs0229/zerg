@@ -44,7 +44,7 @@ class ExceptionHandler extends Handle
         return json($result, $this->code);
     }
 
-    private function recordErrorLog(Exception $e)
+    private function recordErrorLog(\Exception $e)
     {
         Log::init([
             'type' => 'File',
