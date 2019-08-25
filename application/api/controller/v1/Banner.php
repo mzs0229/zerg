@@ -12,27 +12,17 @@ class Banner
 {
     public function getBanner($id)
     {
-        // $data = [
-        //     'id' => $id
-        // ];
 
-        // $validate = new IDMustBePositiveInt();
-
-        // $result = $validate->batch()->check($data);
-        // if(!$result){
-        //     echo $validate->getError();
-        // }else{
-        //     echo 'passed';
-        // }
 
         (new IDMustBePositiveInt())->goCheck();
-       
+        // $banner = BannerModel::with(['items','items.img'])->find($id);
         $banner = BannerModel::getBannerById($id);
+       
         if(!$banner){
             throw new BannerMissException();
         }
       
-        return json($banner);
+        return $banner;
 
         
        
