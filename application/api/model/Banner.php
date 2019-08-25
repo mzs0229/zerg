@@ -6,7 +6,7 @@ use think\Db;
 use think\Exception;
 use think\Model;
 
-class Banner extends Model
+class Banner extends BaseModel
 {
     protected $hidden =['update_time','delete_time'];
     public function items()
@@ -25,6 +25,6 @@ class Banner extends Model
         // return $result;
 
         $banner = self::with(['items','items.img'])->find($id);
-        return json($banner);
+        return $banner;
     }
 }

@@ -2,84 +2,35 @@
 
 namespace app\api\controller\v1;
 
-use think\Controller;
-use think\Request;
+use app\api\model\BaseModel;
+use app\api\validate\IDCollection;
+use app\api\model\Theme as ThemeModel;
+use app\api\validate\IDMustBePositiveInt;
+use app\lib\exception\ThemeException;
+use app\lib\exception\ThemetestException;
 
-class Theme extends Controller
+class Theme extends BaseModel
 {
-    /**
-     * 显示资源列表
-     *
-     * @return \think\Response
-     */
-    public function index()
+    public function getSimpleList($ids='')
     {
-        //
+        (new IDCollection())->goCheck();
+        $ids = explode(',', $ids);
+        
+        $result = ThemeModel::with('topicImg,headImg')->select($ids);
+        if($result->isEmpty()){
+            throw new ThemeException();
+        }
+        return $result;
     }
 
-    /**
-     * 显示创建资源表单页.
-     *
-     * @return \think\Response
-     */
-    public function create()
+    public function getComplexOne($id)
     {
-        //
+        (new IDMustBePositiveInt())->goCheck();
+        $theme = ThemeModel::getThemeWithProducts($id);
+        if($theme->isEmpty()){
+            throw new ThemetestException();
+        }
+        return $theme;
     }
-
-    /**
-     * 保存新建的资源
-     *
-     * @param  \think\Request  $request
-     * @return \think\Response
-     */
-    public function save(Request $request)
-    {
-        //
-    }
-
-    /**
-     * 显示指定的资源
-     *
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function read($id)
-    {
-        //
-    }
-
-    /**
-     * 显示编辑资源表单页.
-     *
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * 保存更新的资源
-     *
-     * @param  \think\Request  $request
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * 删除指定资源
-     *
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function delete($id)
-    {
-        //
-    }
+    
 }
