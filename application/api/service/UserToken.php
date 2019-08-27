@@ -5,7 +5,10 @@ namespace app\api\service;
 use app\lib\exception\WeChatException;
 use think\Exception;
 
-class UserToken 
+use app\api\model\User as UserModel;
+use app\lib\exception\TokenException;
+
+class UserToken extends Token
 {
     protected $code;
     protected $wxAppID;
@@ -42,6 +45,49 @@ class UserToken
     private function grantToken($wxResult)
     {
         $openid = $wxResult['openid'];
+        $user = UserModel::getByOpenID($openid);
+        if($user){
+            $uid = $user->id;
+        }else{
+            $uid = $this->newUser($openid);
+        }
+        $cacheValue = $this->prepareCacheValue($wxResult,$uid);
+        $token = $this->saveToCache($cacheValue);
+        return $token;
+    }
+
+    private function saveToCache($cacheValue)
+    {
+        $key = self::generateToken();
+        $value = json_encode($cacheValue);
+        $expire_in = config('setting.token_expire_in');
+
+        $request = cache($key,$value,$expire_in);
+        if(!$request){
+            throw new TokenException([
+                'msg' => '服务器缓存异常',
+                'errorCode' => 10005
+            ]);
+        }
+
+        return $key;
+    }
+
+
+    private function prepareCacheValue($wxResult,$uid)
+    {
+        $cacheValue = $wxResult;
+        $cacheValue['uid'] = $uid;
+        $cacheValue['scope'] = 16;
+        return $cacheValue;
+    }
+
+    private function newUser($openid)
+    {
+        $user = UserModel::create([
+            'openid' => $openid
+        ]);
+        return $user->id;
     }
 
     private function processLoginError($wxResult)
