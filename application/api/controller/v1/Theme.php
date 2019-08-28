@@ -7,7 +7,7 @@ use app\api\validate\IDCollection;
 use app\api\model\Theme as ThemeModel;
 use app\api\validate\IDMustBePositiveInt;
 use app\lib\exception\ThemeException;
-use app\lib\exception\ThemetestException;
+
 
 class Theme extends BaseModel
 {
@@ -27,8 +27,8 @@ class Theme extends BaseModel
     {
         (new IDMustBePositiveInt())->goCheck();
         $theme = ThemeModel::getThemeWithProducts($id);
-        if($theme->isEmpty()){
-            throw new ThemetestException();
+        if(!$theme){
+            throw new ThemeException();
         }
         return $theme;
     }
