@@ -35,9 +35,9 @@ class UserToken extends Token
         }else{
             $loginFail = array_key_exists('errcode',$wxResult);
             if($loginFail){
-                $this->processLoginError($wxResult);
+                return $this->processLoginError($wxResult);
             }else{
-                $this->grantToken($wxResult);
+                return $this->grantToken($wxResult);
             }
         }
     }

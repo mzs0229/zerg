@@ -1,10 +1,9 @@
-<?php
+<?php 
 
 namespace app\api\service;
 
 use app\lib\exception\TokenException;
 use think\Cache;
-use think\Exception;
 use think\Request;
 
 
@@ -50,4 +49,3 @@ class Token
 }
 
  
-

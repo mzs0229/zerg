@@ -48,3 +48,146 @@
 [ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000511s ]
 
 ---------------------------------------------------------------
+[ 2019-08-29T22:24:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.483247s][吞吐率：2.07req/s] [内存消耗：633.61kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002284s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005810s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.001826s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T22:24:33+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.323755s][吞吐率：3.09req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001176s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001406s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000585s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T22:26:57+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.303843s][吞吐率：3.29req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000830s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000567s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T22:34:18+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.364805s][吞吐率：2.74req/s] [内存消耗：436.53kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001652s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002120s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000605s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T22:41:41+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：108.691512s][吞吐率：0.01req/s] [内存消耗：437.84kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003098s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003150s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.002733s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:11:33+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.320497s][吞吐率：3.12req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000935s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001188s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000568s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:14:10+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.302736s][吞吐率：3.30req/s] [内存消耗：436.03kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000783s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001401s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000621s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:14:36+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.288922s][吞吐率：3.46req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000913s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000506s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:15:09+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.319602s][吞吐率：3.13req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000702s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000516s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:15:58+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.280090s][吞吐率：3.57req/s] [内存消耗：436.03kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000703s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001680s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000607s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:17:12+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：50.747027s][吞吐率：0.02req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001432s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001804s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000752s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:18:41+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：55.442933s][吞吐率：0.02req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001099s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001168s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.001216s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:19:28+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：24.100501s][吞吐率：0.04req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001790s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001563s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.001058s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:20:36+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：56.980640s][吞吐率：0.02req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008813s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003277s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.002554s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:21:45+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：22.982517s][吞吐率：0.04req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000755s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000545s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:24:05+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：28.356958s][吞吐率：0.04req/s] [内存消耗：436.53kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005432s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002472s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.001188s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:34:31+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.331644s][吞吐率：3.02req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001702s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003933s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.001079s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:35:58+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=10
+[ log ] z.cn/api/v1/product/recent?count=10 [运行时间：0.032462s][吞吐率：30.81req/s] [内存消耗：439.16kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001250s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004042s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 10 [ RunTime:0.001989s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:36:17+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.301639s][吞吐率：3.32req/s] [内存消耗：435.44kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001535s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000501s ]
+
+---------------------------------------------------------------
+[ 2019-08-29T23:36:37+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/address
+[ log ] z.cn/api/v1/address [运行时间：0.040322s][吞吐率：24.80req/s] [内存消耗：421.40kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003795s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001933s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.002015s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.001304s ]
+[ sql ] [ SQL ] INSERT INTO `user_address` (`name` , `mobile` , `province` , `city` , `country` , `detail` , `user_id`) VALUES ('mzs0229' , '18501767954' , 'Henan' , 'Luoyang' , 'Luolong' , '关林' , 7) [ RunTime:0.008030s ]
+
+---------------------------------------------------------------
