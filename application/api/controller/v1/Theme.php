@@ -27,15 +27,9 @@ class Theme extends BaseModel
     {
         (new IDMustBePositiveInt())->goCheck();
         $theme = ThemeModel::getThemeWithProducts($id);
-<<<<<<< HEAD
         if(!$theme){
             throw new ThemeException();
         }
-=======
-       if(!$theme){
-           throw new ThemeException();
-       }
->>>>>>> 749a2fa073c863871e20456f830affa00df51b8c
         return $theme;
     }
     
