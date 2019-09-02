@@ -12,20 +12,13 @@ use app\lib\exception\TokenException;
 use app\lib\exception\UserException;
 use think\Controller;
 
-class Address extends Controller
+class Address extends BaseController
 {
     protected $beforeActionList = [
         'checkPrimaryScope' => ['only' => 'createOrUpdateAddress'],
         //'first' => ['only'=>'second']
     ];
-    
-
-
-    protected function checkPrimaryScope()
-    {
-     TokenService::needPrimaryScope();
-       
-    }
+   
     public function createOrUpdateAddress()
     {
         $validate = new AddressNew();
