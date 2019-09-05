@@ -5,7 +5,7 @@ namespace app\api\service;
 use app\lib\exception\WeChatException;
 use think\Exception;
 
-use app\api\model\User as UserModel;
+use app\api\model\User;
 use app\lib\enum\ScopeEnum;
 use app\lib\exception\TokenException;
 
@@ -46,7 +46,7 @@ class UserToken extends Token
     private function grantToken($wxResult)
     {
         $openid = $wxResult['openid'];
-        $user = UserModel::getByOpenID($openid);
+        $user = User::getByOpenID($openid);
         if($user){
             $uid = $user->id;
         }else{
