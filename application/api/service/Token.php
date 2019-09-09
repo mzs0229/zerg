@@ -6,6 +6,7 @@ use app\lib\enum\ScopeEnum;
 use app\lib\exception\ForbiddenException;
 use app\lib\exception\TokenException;
 use think\Cache;
+use think\Exception;
 use think\Request;
 
 
@@ -75,7 +76,19 @@ class Token
         } else {
             throw new TokenException();
         }
-    }
+	}
+	
+	public static function isValidOperate($checkedUID)
+	{
+		if(!$checkedUID){
+			throw new Exception('必须穿一个被查的UID');
+		}
+		$currentOperateUID = self::getCurrentUid();
+		if($currentOperateUID == $checkedUID){
+			return true;
+		}
+		return false;
+	}
 }
 
  

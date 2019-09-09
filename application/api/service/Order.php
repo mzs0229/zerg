@@ -9,6 +9,7 @@ use app\api\model\UserAddress;
 use app\lib\exception\OrderException;
 use app\lib\exception\UserException;
 use think\Exception;
+use think\Db;
 
 class Order
 {
@@ -61,7 +62,7 @@ class Order
             $orderProduct = new OrderProduct();
             $orderProduct->saveAll($this->oProducts);
 
-            Db:commit();
+            Db::commit();
 
             return [
                 'order_no' => $orderNo,

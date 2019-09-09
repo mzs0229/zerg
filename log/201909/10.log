@@ -1,0 +1,413 @@
+[ 2019-09-10T00:00:38+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.126605s][吞吐率：7.90req/s] [内存消耗：532.02kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003339s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011988s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000990s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910448388963685' , 1.3 , 130 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":100,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568044838 , 1568044838) [ RunTime:0.002572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.003861s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 100 , 28) [ RunTime:0.000512s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 28) [ RunTime:0.000917s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 28) [ RunTime:0.000873s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:02:55+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：43.066135s][吞吐率：0.02req/s] [内存消耗：532.03kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000773s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.001296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001350s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910449531038716' , 1.3 , 130 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":100,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568044932 , 1568044932) [ RunTime:0.002978s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 100 , 29) [ RunTime:0.000486s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 29) [ RunTime:0.000377s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 29) [ RunTime:0.000374s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:04:28+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：1.377163s][吞吐率：0.73req/s] [内存消耗：437.67kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000855s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000616s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:04:33+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.054140s][吞吐率：18.47req/s] [内存消耗：532.03kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002017s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003519s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.001458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000961s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910450732247670' , 1.3 , 130 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":100,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568045073 , 1568045073) [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 100 , 30) [ RunTime:0.000461s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 30) [ RunTime:0.000236s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 30) [ RunTime:0.000303s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:11:57+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.309607s][吞吐率：3.23req/s] [内存消耗：437.67kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000768s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001113s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000642s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:11:59+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.052192s][吞吐率：19.16req/s] [内存消耗：532.03kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.003011s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.002014s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910455197392102' , 1.3 , 130 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":100,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568045519 , 1568045519) [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000774s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 100 , 31) [ RunTime:0.000437s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 31) [ RunTime:0.000279s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 31) [ RunTime:0.000279s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:12:22+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.026585s][吞吐率：37.62req/s] [内存消耗：532.03kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000558s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000744s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910455425785373' , 1.3 , 130 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":100,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568045542 , 1568045542) [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 100 , 32) [ RunTime:0.000466s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 32) [ RunTime:0.000294s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 32) [ RunTime:0.000441s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:12:25+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.030537s][吞吐率：32.75req/s] [内存消耗：532.03kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910455457939851' , 1.3 , 130 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":100,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568045545 , 1568045545) [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.001743s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 100 , 33) [ RunTime:0.000423s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 33) [ RunTime:0.000269s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 33) [ RunTime:0.000273s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:12:27+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.035645s][吞吐率：28.05req/s] [内存消耗：532.03kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000554s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001251s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.002601s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.002076s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001719s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910455470493291' , 1.3 , 130 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":100,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568045547 , 1568045547) [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000752s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 100 , 34) [ RunTime:0.000411s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 34) [ RunTime:0.000223s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 34) [ RunTime:0.000195s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:12:28+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.034667s][吞吐率：28.85req/s] [内存消耗：532.03kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000607s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.002901s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001325s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910455480311362' , 1.3 , 130 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":100,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568045548 , 1568045548) [ RunTime:0.001060s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.001133s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 100 , 35) [ RunTime:0.000452s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 35) [ RunTime:0.000202s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 35) [ RunTime:0.000161s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:14:32+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：102.655662s][吞吐率：0.01req/s] [内存消耗：533.70kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000839s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001463s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001582s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910456352422890' , 1.3 , 130 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":100,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568045570 , 1568045570) [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000777s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 100 , 36) [ RunTime:0.000416s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 36) [ RunTime:0.000346s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 36) [ RunTime:0.000356s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:17:06+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：132.080229s][吞吐率：0.01req/s] [内存消耗：533.70kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000809s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001556s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910457222051500' , 1.3 , 130 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":100,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568045694 , 1568045694) [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.001097s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 100 , 37) [ RunTime:0.000596s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 37) [ RunTime:0.000252s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 37) [ RunTime:0.000270s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:22:39+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.329563s][吞吐率：3.03req/s] [内存消耗：437.67kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000613s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000520s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:22:41+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.108630s][吞吐率：9.21req/s] [内存消耗：532.03kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000691s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003390s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.006347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.004005s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.018425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910461615954809' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568046161 , 1568046161) [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.014930s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 38) [ RunTime:0.000461s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 38) [ RunTime:0.000342s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 38) [ RunTime:0.002226s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:29:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.312413s][吞吐率：3.20req/s] [内存消耗：440.17kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001486s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001477s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000672s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:29:31+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.035608s][吞吐率：28.08req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000578s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004320s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.001998s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.001547s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.002107s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910465719641483' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568046571 , 1568046571) [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 39) [ RunTime:0.000416s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 39) [ RunTime:0.000320s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 39) [ RunTime:0.000186s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:29:49+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.316695s][吞吐率：3.16req/s] [内存消耗：439.59kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000789s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002824s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000849s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:29:51+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.053420s][吞吐率：18.72req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000847s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000795s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910465914994871' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568046591 , 1568046591) [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000875s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 40) [ RunTime:0.000456s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 40) [ RunTime:0.000249s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 40) [ RunTime:0.000231s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:32:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.309554s][吞吐率：3.23req/s] [内存消耗：439.59kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000838s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000650s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:32:23+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.054297s][吞吐率：18.42req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001358s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002378s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910467430669281' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568046743 , 1568046743) [ RunTime:0.006250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 41) [ RunTime:0.000517s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 41) [ RunTime:0.000277s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 41) [ RunTime:0.000220s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:34:08+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.045614s][吞吐率：21.92req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000563s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.001116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000800s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910468481613205' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568046848 , 1568046848) [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000925s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 42) [ RunTime:0.000472s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 42) [ RunTime:0.000249s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 42) [ RunTime:0.000305s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:35:32+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.046496s][吞吐率：21.51req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000611s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000932s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910469323720995' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568046932 , 1568046932) [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.001069s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 43) [ RunTime:0.000503s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 43) [ RunTime:0.000319s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 43) [ RunTime:0.000239s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:36:43+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.042646s][吞吐率：23.45req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000557s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000750s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910470035525207' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568047003 , 1568047003) [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.001021s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 44) [ RunTime:0.000499s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 44) [ RunTime:0.000358s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 44) [ RunTime:0.000258s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:39:36+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.043830s][吞吐率：22.82req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000734s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000795s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910471765758945' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568047176 , 1568047176) [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000754s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 45) [ RunTime:0.000417s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 45) [ RunTime:0.000235s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 45) [ RunTime:0.000276s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:41:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.043161s][吞吐率：23.17req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000957s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910472810977315' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568047280 , 1568047280) [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 46) [ RunTime:0.000481s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 46) [ RunTime:0.000288s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 46) [ RunTime:0.000254s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:42:58+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.042947s][吞吐率：23.28req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910473788212772' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568047378 , 1568047378) [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000686s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 47) [ RunTime:0.000442s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 47) [ RunTime:0.000283s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 47) [ RunTime:0.000284s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:47:09+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.036914s][吞吐率：27.09req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000663s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000895s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910476298253614' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568047629 , 1568047629) [ RunTime:0.003316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.001447s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 48) [ RunTime:0.001005s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 48) [ RunTime:0.000594s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 48) [ RunTime:0.000843s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:47:19+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.042227s][吞吐率：23.68req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000861s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910476395332292' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568047639 , 1568047639) [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 49) [ RunTime:0.000476s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 49) [ RunTime:0.000251s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 49) [ RunTime:0.000291s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:49:52+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.060204s][吞吐率：16.61req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001332s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.001243s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000935s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910477921641776' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568047792 , 1568047792) [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 50) [ RunTime:0.000544s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 50) [ RunTime:0.000353s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 50) [ RunTime:0.000666s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:51:04+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order
+[ log ] z.cn/api/v1/order [运行时间：0.046806s][吞吐率：21.36req/s] [内存消耗：533.95kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000666s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 7 LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000849s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `update_time` , `create_time`) VALUES (7 , 'C910478640602404' , 0.4 , 40 , 'http://z.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"\\u6728\\u90d1\\u751f\",\"mobile\":\"18501767954\",\"province\":\"Henan\",\"city\":\"Luoyang\",\"country\":\"Luolong123\",\"detail\":\"\\u5173\\u6797aaaaa\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"haveStock\":true,\"count\":10,\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.1},{\"id\":2,\"haveStock\":true,\"count\":15,\"name\":\"\\u68a8\\u82b1\\u5e26\\u96e8 3\\u4e2a\",\"totalPrice\":0.15},{\"id\":3,\"haveStock\":true,\"count\":15,\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.15}]' , 1568047863 , 1568047863) [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.000936s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 10 , 51) [ RunTime:0.000571s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (2 , 15 , 51) [ RunTime:0.000323s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 15 , 51) [ RunTime:0.000287s ]
+
+---------------------------------------------------------------
+[ 2019-09-10T00:51:39+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/pay/pre_order
+[ log ] z.cn/api/v1/pay/pre_order [运行时间：35.570833s][吞吐率：0.03req/s] [内存消耗：709.85kb] [文件加载：65]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000533s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` = 51 LIMIT 1 [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT * FROM `order_product` WHERE  `order_id` = 51 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,2,3) [ RunTime:0.000514s ]
+
+---------------------------------------------------------------
