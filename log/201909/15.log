@@ -1,0 +1,161 @@
+[ 2019-09-15T00:34:31+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.609090s][吞吐率：1.64req/s] [内存消耗：641.70kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009685s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.035239s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.010531s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:36:40+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=1&size=3
+[ log ] z.cn/api/v1/order/by_user?page=1&size=3 [运行时间：0.077800s][吞吐率：12.85req/s] [内存消耗：543.41kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002496s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005084s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 0,4 [ RunTime:0.006546s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:39:23+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=1&size=3
+[ log ] z.cn/api/v1/order/by_user?page=1&size=3 [运行时间：144.355282s][吞吐率：0.01req/s] [内存消耗：542.41kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 0,4 [ RunTime:0.001174s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:40:10+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=3
+[ log ] z.cn/api/v1/order/by_user?page=2&size=3 [运行时间：5.163252s][吞吐率：0.19req/s] [内存消耗：542.59kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000967s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001984s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 3,4 [ RunTime:0.000867s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:40:21+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=3
+[ log ] z.cn/api/v1/order/by_user?page=2&size=3 [运行时间：0.039305s][吞吐率：25.44req/s] [内存消耗：540.92kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000957s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001449s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 3,4 [ RunTime:0.002123s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:40:50+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=3
+[ log ] z.cn/api/v1/order/by_user?page=2&size=3 [运行时间：0.022206s][吞吐率：45.03req/s] [内存消耗：540.34kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000988s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001377s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 3,4 [ RunTime:0.001246s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:43:51+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=3
+[ log ] z.cn/api/v1/order/by_user?page=2&size=3 [运行时间：0.029427s][吞吐率：33.98req/s] [内存消耗：540.93kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001061s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001522s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 3,4 [ RunTime:0.001017s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:44:11+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=30
+[ log ] z.cn/api/v1/order/by_user?page=2&size=30 [运行时间：0.043707s][吞吐率：22.88req/s] [内存消耗：585.45kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001338s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002598s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 30,31 [ RunTime:0.004186s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:45:08+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=5
+[ log ] z.cn/api/v1/order/by_user?page=2&size=5 [运行时间：0.032274s][吞吐率：30.98req/s] [内存消耗：542.15kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002126s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002793s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 5,6 [ RunTime:0.002264s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:46:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=5
+[ log ] z.cn/api/v1/order/by_user?page=2&size=5 [运行时间：0.027674s][吞吐率：36.14req/s] [内存消耗：542.15kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001283s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001981s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 5,6 [ RunTime:0.001391s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:46:06+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=5
+[ log ] z.cn/api/v1/order/by_user?page=2&size=5 [运行时间：0.024691s][吞吐率：40.50req/s] [内存消耗：542.15kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001303s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001599s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 5,6 [ RunTime:0.001241s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:46:23+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=5
+[ log ] z.cn/api/v1/order/by_user?page=2&size=5 [运行时间：0.033129s][吞吐率：30.18req/s] [内存消耗：542.74kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001122s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002495s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 5,6 [ RunTime:0.002871s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:46:59+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=5
+[ log ] z.cn/api/v1/order/by_user?page=2&size=5 [运行时间：0.025102s][吞吐率：39.84req/s] [内存消耗：542.15kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002491s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001436s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 5,6 [ RunTime:0.001159s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:47:00+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=5
+[ log ] z.cn/api/v1/order/by_user?page=2&size=5 [运行时间：0.020133s][吞吐率：49.67req/s] [内存消耗：542.15kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001129s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001547s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 5,6 [ RunTime:0.001373s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:47:10+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=5
+[ log ] z.cn/api/v1/order/by_user?page=2&size=5 [运行时间：0.024018s][吞吐率：41.64req/s] [内存消耗：542.15kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000785s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001763s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 5,6 [ RunTime:0.001149s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:47:11+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=5
+[ log ] z.cn/api/v1/order/by_user?page=2&size=5 [运行时间：0.034959s][吞吐率：28.60req/s] [内存消耗：542.15kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001370s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002656s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 5,6 [ RunTime:0.008956s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:47:14+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=5
+[ log ] z.cn/api/v1/order/by_user?page=2&size=5 [运行时间：0.019881s][吞吐率：50.30req/s] [内存消耗：542.15kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000895s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001811s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 5,6 [ RunTime:0.001669s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T00:47:28+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=5
+[ log ] z.cn/api/v1/order/by_user?page=2&size=5 [运行时间：0.037033s][吞吐率：27.00req/s] [内存消耗：542.74kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001616s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001686s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 5,6 [ RunTime:0.001566s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T01:03:46+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.314386s][吞吐率：3.18req/s] [内存消耗：445.37kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000631s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000959s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000558s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T01:03:50+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.289664s][吞吐率：3.45req/s] [内存消耗：445.37kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000662s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000591s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T01:08:40+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/by_user?page=2&size=5
+[ log ] z.cn/api/v1/order/by_user?page=2&size=5 [运行时间：0.026626s][吞吐率：37.56req/s] [内存消耗：544.98kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003035s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002006s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `user_id` = 7 ORDER BY create_time desc LIMIT 5,6 [ RunTime:0.000951s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T01:09:44+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/7
+[ log ] z.cn/api/v1/order/7 [运行时间：0.025158s][吞吐率：39.75req/s] [内存消耗：466.63kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000760s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001685s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.001896s ]
+
+---------------------------------------------------------------
+[ 2019-09-15T01:12:52+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/7
+[ log ] z.cn/api/v1/order/7 [运行时间：0.018542s][吞吐率：53.93req/s] [内存消耗：466.54kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000765s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001314s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000926s ]
+
+---------------------------------------------------------------

@@ -7,6 +7,7 @@ use think\Controller;
 use think\Request;
 use app\api\service\Pay as PayService;
 use app\api\controller\BaseController;
+use app\api\service\WxNotify;
 
 class Pay extends BaseController
 {
@@ -19,6 +20,12 @@ class Pay extends BaseController
     {
         (new IDMustBePositiveInt())->goCheck();
         $pay = new PayService($id);
-        $pay->pay();
+        return $pay->pay();
+    }
+
+    public function receiveNotify()
+    {
+        $notify = new WxNotify();
+        $notify->Handle();
     }
 }
