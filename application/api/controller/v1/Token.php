@@ -3,7 +3,9 @@
 namespace app\api\controller\v1;
 
 use app\api\service\UserToken;
+use app\api\service\Token as TokenService;
 use app\api\validate\TokenGet;
+use app\lib\exception\ParameterException;
 
 class Token 
 {
@@ -16,5 +18,18 @@ class Token
         return [
 			'token' => $token
 		];
+    }
+
+    public function verifyToken($token='')
+    {
+        if(!$token){
+            throw new ParameterException([
+                'TOKEN不能允许为空'
+            ]);
+        }
+        $valid = TokenService::verifyToken($token);
+        return [
+            'isValid'=> $valid
+        ];
     }
 }
