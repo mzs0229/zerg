@@ -1,0 +1,56 @@
+[ 2019-10-01T20:34:46+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ log ] z.cn/api/v1/category/all [运行时间：0.188320s][吞吐率：5.31req/s] [内存消耗：591.41kb] [文件加载：45]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004167s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.016786s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.003580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.002394s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.007384s ]
+
+---------------------------------------------------------------
+[ 2019-10-01T20:34:46+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/by_category?id=2
+[ log ] z.cn/api/v1/product/by_category?id=2 [运行时间：0.039164s][吞吐率：25.53req/s] [内存消耗：455.63kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001248s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006635s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `category_id` = 2 [ RunTime:0.001707s ]
+
+---------------------------------------------------------------
+[ 2019-10-01T20:35:01+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/verify
+[ log ] z.cn/api/v1/token/verify [运行时间：0.026436s][吞吐率：37.83req/s] [内存消耗：177.16kb] [文件加载：33]
+
+---------------------------------------------------------------
+[ 2019-10-01T20:35:01+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ log ] z.cn/api/v1/banner/1 [运行时间：0.042080s][吞吐率：23.76req/s] [内存消耗：483.02kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001221s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.002454s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001586s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.002147s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001680s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000944s ]
+
+---------------------------------------------------------------
+[ 2019-10-01T20:35:01+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ log ] z.cn/api/v1/theme?ids=1,2,3 [运行时间：0.040639s][吞吐率：24.61req/s] [内存消耗：477.47kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000939s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002408s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.003257s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.001096s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.001017s ]
+
+---------------------------------------------------------------
+[ 2019-10-01T20:35:01+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent
+[ log ] z.cn/api/v1/product/recent [运行时间：0.027298s][吞吐率：36.63req/s] [内存消耗：454.48kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000703s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001274s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 15 [ RunTime:0.002720s ]
+
+---------------------------------------------------------------
+[ 2019-10-01T20:35:02+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ log ] z.cn/api/v1/token/user [运行时间：0.777231s][吞吐率：1.29req/s] [内存消耗：450.63kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000848s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005896s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'ohcQb5DV5U3NWLiisCTVd3WfT5Rc' LIMIT 1 [ RunTime:0.000672s ]
+
+---------------------------------------------------------------
