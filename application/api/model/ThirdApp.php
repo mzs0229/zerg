@@ -11,8 +11,6 @@ class ThirdApp extends BaseModel
         $app = self::where('app_id','=',$ac)
             ->where('app_secret', '=',$se)
             ->find();
-            echo $app;
         return $app;
-
     }
 }

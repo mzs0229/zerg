@@ -1,0 +1,196 @@
+[ 2019-10-10T22:13:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.071857s][吞吐率：13.92req/s] [内存消耗：586.54kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006428s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.015606s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.006347s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T22:32:46+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.044205s][吞吐率：22.62req/s] [内存消耗：586.55kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002087s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.003011s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.001170s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T22:43:30+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate
+[ log ] z.cn/api/v1/order/paginate [运行时间：0.036759s][吞吐率：27.20req/s] [内存消耗：565.32kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001216s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002788s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 0,21 [ RunTime:0.002116s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T22:43:33+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=3&size=20
+[ log ] z.cn/api/v1/order/paginate?page=3&size=20 [运行时间：0.026731s][吞吐率：37.41req/s] [内存消耗：499.45kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000797s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001807s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 40,21 [ RunTime:0.001450s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T22:43:47+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=4&size=20
+[ log ] z.cn/api/v1/order/paginate?page=4&size=20 [运行时间：0.025624s][吞吐率：39.03req/s] [内存消耗：499.45kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001148s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 60,21 [ RunTime:0.001726s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T22:43:50+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=5&size=20
+[ log ] z.cn/api/v1/order/paginate?page=5&size=20 [运行时间：0.019247s][吞吐率：51.96req/s] [内存消耗：497.92kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001248s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 80,21 [ RunTime:0.002075s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T22:43:54+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=6&size=20
+[ log ] z.cn/api/v1/order/paginate?page=6&size=20 [运行时间：0.014549s][吞吐率：68.73req/s] [内存消耗：474.98kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000822s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002738s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 100,21 [ RunTime:0.001559s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T22:48:48+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=1&size=20
+[ log ] z.cn/api/v1/order/paginate?page=1&size=20 [运行时间：0.032100s][吞吐率：31.15req/s] [内存消耗：485.61kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001620s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002271s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 0,21 [ RunTime:0.003186s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T22:48:59+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=2&size=20
+[ log ] z.cn/api/v1/order/paginate?page=2&size=20 [运行时间：0.016988s][吞吐率：58.86req/s] [内存消耗：474.98kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000969s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.002107s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 20,21 [ RunTime:0.001156s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:30:48+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.016525s][吞吐率：60.51req/s] [内存消耗：456.82kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000780s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000662s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:30:49+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=1&size=20
+[ log ] z.cn/api/v1/order/paginate?page=1&size=20 [运行时间：0.021445s][吞吐率：46.63req/s] [内存消耗：487.53kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000707s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001257s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 0,21 [ RunTime:0.001328s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:32:35+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=1&size=20
+[ log ] z.cn/api/v1/order/paginate?page=1&size=20 [运行时间：0.028356s][吞吐率：35.27req/s] [内存消耗：487.53kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000803s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001434s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 0,21 [ RunTime:0.001033s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:41:51+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=1&size=20
+[ log ] z.cn/api/v1/order/paginate?page=1&size=20 [运行时间：0.176542s][吞吐率：5.66req/s] [内存消耗：750.00kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001852s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.014620s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 0,21 [ RunTime:0.003302s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:41:54+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=1&size=20
+[ log ] z.cn/api/v1/order/paginate?page=1&size=20 [运行时间：0.030971s][吞吐率：32.29req/s] [内存消耗：487.53kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002411s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001751s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 0,21 [ RunTime:0.001374s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:42:23+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.023465s][吞吐率：42.62req/s] [内存消耗：458.20kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000730s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.001942s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000691s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:42:25+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.008880s][吞吐率：112.61req/s] [内存消耗：456.45kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000537s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000526s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:42:27+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.010887s][吞吐率：91.85req/s] [内存消耗：456.45kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000576s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000550s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:42:37+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.026990s][吞吐率：37.05req/s] [内存消耗：456.60kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004591s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.002233s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.001907s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:43:28+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.014056s][吞吐率：71.14req/s] [内存消耗：456.60kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000768s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000583s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:43:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.010687s][吞吐率：93.57req/s] [内存消耗：456.60kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000557s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000513s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:47:18+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.016321s][吞吐率：61.27req/s] [内存消耗：457.20kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000784s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000552s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:47:19+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.011070s][吞吐率：90.33req/s] [内存消耗：456.60kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000514s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:47:20+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.010748s][吞吐率：93.04req/s] [内存消耗：456.60kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000543s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000791s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:47:20+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.009641s][吞吐率：103.72req/s] [内存消耗：456.60kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000501s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:47:20+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.010627s][吞吐率：94.10req/s] [内存消耗：456.60kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000712s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.001273s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000650s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:48:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.011219s][吞吐率：89.13req/s] [内存消耗：457.48kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000725s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000508s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:58:08+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/app
+[ log ] z.cn/api/v1/token/app [运行时间：0.016088s][吞吐率：62.16req/s] [内存消耗：458.68kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001336s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.001871s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'muzs'  AND `app_secret` = '123456' LIMIT 1 [ RunTime:0.000595s ]
+
+---------------------------------------------------------------
+[ 2019-10-10T23:58:09+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=1&size=20
+[ log ] z.cn/api/v1/order/paginate?page=1&size=20 [运行时间：0.026084s][吞吐率：38.34req/s] [内存消耗：489.10kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001134s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.001522s ]
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 0,21 [ RunTime:0.001358s ]
+
+---------------------------------------------------------------

@@ -26,7 +26,7 @@ class Order extends BaseController
     protected $beforeActionList = [
         'checkExclusiveScope' => ['only' => 'placeOrder'],
         'checkPrimaryScope' => ['only' => 'getDetail,getSummaryByUser'],
-        'checkSuperScope' => ['only' => 'delivery,getSummary']
+        // 'checkSuperScope' => ['only' => 'delivery,getSummary']
     ];
     
     /**
@@ -102,6 +102,9 @@ class Order extends BaseController
      * @throws \app\lib\exception\ParameterException
      */
     public function getSummary($page=1, $size = 20){
+
+        
+
         (new PagingParameter())->goCheck();
 //        $uid = Token::getCurrentUid();
         $pagingOrders = OrderModel::getSummaryByPage($page, $size);

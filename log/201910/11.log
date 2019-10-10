@@ -1,0 +1,12 @@
+[ 2019-10-11T00:13:00+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=1&size=20
+[ log ] z.cn/api/v1/order/paginate?page=1&size=20 [运行时间：0.028292s][吞吐率：35.35req/s] [内存消耗：487.81kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000819s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 0,21 [ RunTime:0.001308s ]
+
+---------------------------------------------------------------
+[ 2019-10-11T00:13:01+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/order/paginate?page=2&size=20
+[ log ] z.cn/api/v1/order/paginate?page=2&size=20 [运行时间：0.024121s][吞吐率：41.46req/s] [内存消耗：476.78kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001165s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `order` ORDER BY create_time desc LIMIT 20,21 [ RunTime:0.002278s ]
+
+---------------------------------------------------------------
